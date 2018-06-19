@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 
-import 'Pokemon.css'
+import './Pokemon.css'
+import PokemonEvolution from './PokemonEvolution'
 
 class Pokemon extends Component {
     state = {
@@ -21,7 +22,7 @@ class Pokemon extends Component {
         return (
           <div className="Pokemon">
             <img
-              src="http://hsvbg.org/wp-content/uploads/2016/08/Poke_Ball.png"
+              src="http://pngimg.com/uploads/pokemon_logo/pokemon_logo_PNG13.png"
               alt="Pokemon"
               className="logo"
             />
@@ -30,7 +31,7 @@ class Pokemon extends Component {
               <div>
                 <input
                   type="text"
-                  value={this.state.username}
+                  value={this.state.pokemonName}
                   onChange={this.handleChange}
                 />
               </div>
